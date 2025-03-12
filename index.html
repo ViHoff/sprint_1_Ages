@@ -3,38 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Calculadora</title>
+    <title>Site Calculadora - AGES - Sprint_1 - Vicente Hofmeister - 24106954</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
     <body>
-        <section class="box">
-            <form>
-                <input type="text" class="screen" readonly>
-            </form>
-            <div class="button">
-                <button type="button" class="btn btn-ce">CE</button>
-                <button type="button" class="btn btn-dark">C</button>
-                <button type="button" class="btn btn-dark">%</button>
-                <button type="button" class="btn btn-purple">/</button>               
-                <button type="button" class="btn btn-dark">7</button>
-                <button type="button" class="btn btn-dark">8</button>
-                <button type="button" class="btn btn-dark">9</button>
-                <button type="button" class="btn btn-purple">X</button>                                               
-                <button type="button" class="btn btn-dark">4</button>
-                <button type="button" class="btn btn-dark">5</button>
-                <button type="button" class="btn btn-dark">6</button>
-                <button type="button" class="btn btn-purple">-</button>   
-                <button type="button" class="btn btn-dark">1</button>
-                <button type="button" class="btn btn-dark">2</button>
-                <button type="button" class="btn btn-dark">3</button>
-                <button type="button" class="btn btn-purple">+</button>
-                <button type="button" class="btn btn-dark">+/-</button>
-                <button type="button" class="btn btn-dark">0</button>
-                <button type="button" class="btn btn-dark">,</button>
-                <button type="button" class="btn btn-result">=</button>
+        <div id="box">
+                <input id="screen" readonly>
+            <div id="button">
+                <button onclick="clearScreen()" class="btn-ce">CE</button>
+                <button onclick="clearScreen()" class="btn-dark">C</button>
+                <button onclick="showScreen('%')" class="btn-dark">%</button>
+                <button onclick="showScreen('/')" class="btn-purple">/</button>               
+                <button onclick="showScreen('7')" class="btn-dark">7</button>
+                <button onclick="showScreen('8')" class="btn-dark">8</button>
+                <button onclick="showScreen('9')" class="btn-dark">9</button>
+                <button onclick="showScreen('*')" class="btn-purple">X</button>                                               
+                <button onclick="showScreen('4')" class="btn-dark">4</button>
+                <button onclick="showScreen('5')" class="btn-dark">5</button>
+                <button onclick="showScreen('6')" class="btn-dark">6</button>
+                <button onclick="showScreen('-')" class="btn-purple">-</button>   
+                <button onclick="showScreen('1')" class="btn-dark">1</button>
+                <button onclick="showScreen('2')" class="btn-dark">2</button>
+                <button onclick="showScreen('3')" class="btn-dark">3</button>
+                <button onclick="showScreen('+')" class="btn-purple">+</button>
+                <button onclick="invertNumber()"  class="btn-dark">+/-</button>
+                <button onclick="showScreen('0')" class="btn-dark">0</button>
+                <button onclick="showScreen('.')" class="btn-dark">,</button>
+                <button onclick="calculate()" class="btn-result">=</button>
             </div>
-        </section>    
+        </div>    
         <script src="script.js"></script>
     </body>
 </html>
