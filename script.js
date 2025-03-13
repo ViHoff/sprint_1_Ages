@@ -22,10 +22,10 @@ function clearScreen()
 function calculate()
 {
     screen.value = eval(screen.value);
+
 }
 
 function invertNumber()
 {
     screen.value = (screen.value*-1);
 }
-

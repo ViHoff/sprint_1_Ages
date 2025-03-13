@@ -10,6 +10,7 @@ button
     font-weight: bold;
     cursor: pointer;
     box-shadow: 2px 2px 4px rgba(124, 124, 124, 0.2) inset;
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -19,19 +20,25 @@ button
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
     margin: 25px;
+    transition: all 0.5s ease-in-out;
 }
+
 
 
 #box
 {
+    grid-area: menu;
     border-radius: 50px;
     overflow: hidden;
-    max-width: 430px;
+    width: 420px;
+    height: 600px;
     overflow: hidden;
     border: 3px solid rgb(43, 43, 48);
     font-family: Arial, sans-serif;
     background-color: rgb(41,40,51);
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    transition: all 0.5s ease-in-out;
 }
 
 body 
@@ -99,4 +106,89 @@ body
     border:none;
     text-align: right;
     background-color:rgb(41,40,51);
+}
+
+@media screen and (max-width: 415px),(max-height: 575px)
+{
+   
+    button
+    {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        border: none;
+        background-color: hsl(0, 0%, 30%);
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        box-shadow: 2px 2px 4px rgba(124, 124, 124, 0.2) inset;
+        transition: all 0.5s ease-in-out;
+        word-wrap: var(80%);
+    }
+
+    #button
+    {
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 3%;
+        margin: 3%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #box
+    {
+        border-radius: 0px;
+        overflow: hidden;
+        min-width: 250px;
+        min-height: 400px;
+        width: 100%;
+        height: 100%;
+        border: 3px solid rgb(43, 43, 48);
+        font-family: Arial, sans-serif;
+        background-color: rgb(41,40,51);
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+        background: -webkit-radial-gradient();
+        transition: all 0.5s ease-in-out;
+        min-width: 50%;
+    }
+
+    body 
+    {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        background-color: rgb(133, 126, 200);
+        transition: all 0.5s ease-in-out;
+    }
+    
+    #screen
+    {
+        width: 90%;
+        height:30%;
+        padding:0px;
+        font-size: 3rem;
+        color: white;
+        border:none;
+        text-align: right;
+        background-color:rgb(41,40,51);
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 293px),(max-height: 433px)
+{
+    button
+    {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #screen
+    {
+        font-size: 2rem;
+    }
 }
