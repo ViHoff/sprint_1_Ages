@@ -49,6 +49,7 @@ body
     justify-content: center;
     height:100vh;
     background-color: rgb(133, 126, 200);
+    overflow: auto;
 }
 
 .btn-purple

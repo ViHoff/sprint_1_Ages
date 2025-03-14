@@ -1,0 +1,1 @@
+Este é um projeto para o grupo de estudos AGES da PUCRS com o objetivo de desenvolver uma calculadora completamente funcional utilizando HTML, CSS e JavaScript com o fim de adquirir domínio dessas linguagens.
